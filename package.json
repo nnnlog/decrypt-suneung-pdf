@@ -1,0 +1,16 @@
+{
+  "name": "decrypt-suneung",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "buffer-replace": "^1.0.0",
+    "node-pdftk": "^2.1.3"
+  }
+}
