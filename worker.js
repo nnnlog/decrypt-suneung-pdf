@@ -15,6 +15,6 @@ parentPort.on('message', async ({port, filename, realpath}) => {
 	data = replace(data, Buffer.from("/PrintState /ON"), Buffer.from("/PrintState /OFF"));
 	fs.writeFileSync(`${__dirname}/dist/${filename}`, data);
 
-	ps.push(pdftk.input(data).compress().output(false, `${__dirname}/dist/${filename}`));
+	await pdftk.input(data).compress().output(false, `${__dirname}/dist/${filename}`);
 	port.postMessage("");
 });
